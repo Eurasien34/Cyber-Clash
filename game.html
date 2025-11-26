@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber-Clash Card Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Game Screen -->
+    <div id="game-screen" class="screen active">
+        <div class="game-header">
+            <div class="round-info">
+                <h2>Round <span id="current-round">1</span> / <span id="max-rounds-display">20</span></h2>
+            </div>
+        </div>
+
+        <div class="game-board">
+            <!-- Player 1 Section -->
+            <div class="player-section player1">
+                <h3 id="player1-display-name">Player 1</h3>
+                <div class="hp-container">
+                    <div class="hp-bar-wrapper">
+                        <div id="player1-hp-bar" class="hp-bar" style="width: 100%"></div>
+                    </div>
+                    <div class="hp-text"><span id="player1-hp">100</span> / 100 HP</div>
+                </div>
+                <div id="player1-card-area" class="card-area">
+                    <button class="btn-scan" onclick="scanCard(1)">✏️ Enter card number</button>
+                </div>
+            </div>
+
+            <!-- VS Divider -->
+            <div class="vs-divider">VS</div>
+
+            <!-- Player 2 Section -->
+            <div class="player-section player2">
+                <h3 id="player2-display-name">Player 2</h3>
+                <div class="hp-container">
+                    <div class="hp-bar-wrapper">
+                        <div id="player2-hp-bar" class="hp-bar" style="width: 100%"></div>
+                    </div>
+                    <div class="hp-text"><span id="player2-hp">100</span> / 100 HP</div>
+                </div>
+                <div id="player2-card-area" class="card-area">
+                    <button class="btn-scan" onclick="scanCard(2)">✏️ Enter card number</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Resolve Button -->
+        <div id="resolve-section" class="resolve-section" style="display: none;">
+            <button class="btn-resolve" onclick="resolveRound()">⚔️ Resolve Round</button>
+        </div>
+
+        <!-- Round History -->
+        <div class="history-section">
+            <h3>Round History</h3>
+            <div id="round-history" class="round-history"></div>
+        </div>
+    </div>
+
+    <!-- Card Scan Modal -->
+    <div id="scan-modal" class="modal">
+        <div class="modal-content">
+            <h2>Enter Card Number for <span id="scanning-player">Player</span></h2>
+            <div id="card-entry-section" class="qr-input-section">
+                <input type="text" id="card-id-input" placeholder="Enter Card Number (e.g. 1)" autofocus>
+                <button class="btn-primary" onclick="lookupCard()">Enter</button>
+            </div>
+            <div id="card-display" class="card-display" style="display: none;">
+                <div class="card-header">
+                    <h3 id="card-name">Card Name</h3>
+                    <span id="card-type" class="card-type-badge">Type</span>
+                </div>
+                <div class="card-info">
+                    <span>Stars: <span id="card-stars">⭐⭐⭐</span></span>
+                </div>
+                <p id="card-description" class="card-description"></p>
+                <div class="quiz-section">
+                    <h4>Quiz: <span id="quiz-question">Question?</span></h4>
+                    <div id="quiz-options" class="quiz-options">
+                        <!-- Options will be generated here -->
+                    </div>
+                    <button id="submit-quiz-btn" class="btn-quiz" onclick="submitQuiz()">Submit Answer</button>
+                    <div id="quiz-result" class="quiz-result" style="display: none;"></div>
+                    <div id="card-value-display" style="display: none;">
+                        <h4>Card Value: <span id="final-card-value"></span></h4>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="btn-secondary" onclick="closeModal()">Cancel</button>
+                <button id="confirm-card-btn" class="btn-primary" onclick="confirmCard()" style="display: none;">Confirm
+                    Card</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Winner Screen -->
+    <div id="winner-screen" class="screen">
+        <div class="container winner-container">
+            <h1>🏆 GAME OVER 🏆</h1>
+            <div id="winner-announcement" class="winner-announcement"></div>
+            <div class="final-scores">
+                <h3>Final Scores:</h3>
+                <p><span id="final-player1-name">Player 1</span>: <span id="final-player1-hp">100</span> HP</p>
+                <p><span id="final-player2-name">Player 2</span>: <span id="final-player2-hp">100</span> HP</p>
+            </div>
+            <button class="btn-primary" onclick="resetGame()">Play Again</button>
+        </div>
+    </div>
+
+    <script src="cards-database.js"></script>
+    <script src="game-logic.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

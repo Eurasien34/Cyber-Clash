@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber-Clash Card Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Setup Screen -->
+    <div id="setup-screen" class="screen active">
+        <div class="container">
+            <h1>🛡️ CYBER-CLASH 🛡️</h1>
+            <div class="setup-form">
+                <div class="form-group">
+                    <label for="player1-name">Player 1 Name:</label>
+                    <input type="text" id="player1-name" placeholder="Enter Player 1 name" required>
+                </div>
+                <div class="form-group">
+                    <label for="player2-name">Player 2 Name:</label>
+                    <input type="text" id="player2-name" placeholder="Enter Player 2 name" required>
+                </div>
+                <div class="form-group">
+                    <label for="max-rounds">Max Rounds:</label>
+                    <select id="max-rounds">
+                        <option value="15">15 Rounds</option>
+                        <option value="20" selected>20 Rounds</option>
+                        <option value="25">25 Rounds</option>
+                    </select>
+                </div>
+                <button class="btn-primary" onclick="startGame()">Start Game</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="cards-database.js"></script>
+    <script src="game-logic.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

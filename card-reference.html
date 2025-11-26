@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber-Clash Card Reference</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #667eea;
+        }
+
+        .card-section {
+            margin-bottom: 40px;
+        }
+
+        .card-section h2 {
+            color: #764ba2;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #667eea;
+            color: white;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .attack {
+            background-color: #ffe6e6;
+        }
+
+        .defense {
+            background-color: #e6f7ff;
+        }
+
+        .heal {
+            background-color: #e6ffe6;
+        }
+
+        .stars-1 {
+            color: #FFD700;
+        }
+
+        .stars-2 {
+            color: #FFA500;
+        }
+
+        .stars-3 {
+            color: #FF8C00;
+        }
+
+        .stars-4 {
+            color: #FF6347;
+        }
+
+        .stars-5 {
+            color: #DC143C;
+            font-weight: bold;
+        }
+
+        @media print {
+            body {
+                padding: 10px;
+            }
+
+            .no-print {
+                display: none;
+            }
+        }
+
+        .print-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .print-btn:hover {
+            background: #764ba2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🛡️ CYBER-CLASH CARD REFERENCE 🛡️</h1>
+
+    <button class="print-btn no-print" onclick="window.print()">🖨️ Print This Reference</button>
+
+    <div class="card-section">
+        <h2>⚔️ Attack Cards (20 cards)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Card ID</th>
+                    <th>Card Name</th>
+                    <th>Stars</th>
+                    <th>Value</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="attack">
+                    <td><strong>CARD001</strong></td>
+                    <td>Phishing Email</td>
+                    <td class="stars-3">⭐⭐⭐</td>
+                    <td>15</td>
+                    <td>Deceptive email to trick users</td>
+                </tr>
+                <tr class="attack">
+                    <td><strong>CARD002</strong></td>
+                    <td>SQL Injection</td>
+                    <td class="stars-5">⭐⭐⭐⭐⭐</td>
+                    <td>25</td>
+                    <td>Malicious SQL code injection</td>
+                </tr>
+                <tr class="attack">
+                    <td><strong>CARD003</strong></td>
+                    <td>Ransomware</td>
+                    <td class="stars-5">⭐⭐⭐⭐⭐</td>
+                    <td>25</td>
+                    <td>Encrypts files, demands payment</td>
+                </tr>
+                <tr class="attack">
+                    <td><strong>CARD004</strong></td>
+                    <td>DDoS Attack</td>
+                    <td class="stars-4">⭐⭐⭐⭐</td>
+                    <td>20</td>
+                    <td>Overwhelms servers with traffic</td>
+                </tr>
+                <tr class="attack">
+                    <td><strong>CARD005</strong></td>
+                    <td>Trojan Horse</td>
+                    <td class="stars-4">⭐⭐⭐⭐</td>
+                    <td>20</td>
+                    <td>Malware disguised as legitimate</td>
+                </tr>
+                <tr class="attack">
+                    <td><strong>CARD006</strong></td>
+                    <td>Man-in-the-Middle</td>
+                    <td class="stars-4">⭐⭐⭐⭐</td>
+                    <td>20</td>
+                    <td>Intercepts communications</td>
+                </tr>
+                <tr class="attack">
+                    <td><strong>CARD007</strong></td>
+                    <td>Zero-Day Exploit</td>
+                    <td class="stars-5">⭐⭐⭐⭐⭐</td>
+                    <td>25</td>
+                    <td>Exploits unknown vulnerabilities</td>
+                </tr>
+                <tr class="attack">
+                    <td><strong>CARD008</strong></td>
+                    <td>Keylogger</td>
+                    <td class="stars-3">⭐⭐⭐</td>
+                    <td>15</td>
+                    <td>Records every keystroke</td>
+                </tr>
+                <tr class="attack">
+                    <td><strong>CARD009</strong></td>
+                    <td>Brute Force Attack</td>
+                    <td class="stars-3">⭐⭐⭐</td>
+                    <td>15</td>
+                    <td>Tries all possible passwords</td>
+                </tr>
+                <tr class="attack">
+                    <td><strong>CARD010</strong></td>
+                    <td>Cross-Site Scripting (XSS)</td>
+                    <td class="stars-4">⭐⭐⭐⭐</td>
+                    <td>20</td>
+                    <td>Injects malicious scripts</td>
+                </tr>
+                <tr class="attack">
+                    <td><strong>CARD011</strong></td>
+                    <td>Spyware</td>
+                    <td class="stars-3">⭐⭐⭐</td>
+                    <td>15</td>
+                    <td>Secretly monitors user activity</td>
+                </tr>
+                <tr class="attack">
+                    <td><strong>CARD012</strong></td>
+                    <td>Rootkit</td>
+                    <td class="stars-5">⭐⭐⭐⭐⭐</td>
+                    <td>25</td>
+                    <td>Gains unauthorized root access</td>
+                </tr>
+                <tr class="attack">
+                    <td><strong>CARD013</strong></td>
+                    <td>Social Engineering</td>
+                    <td class="stars-4">⭐⭐⭐⭐</td>
+                    <td>20</td>
+                    <td>Psychological manipulation</td>
+                </tr>
+                <tr class="attack">
+                    <td><strong>CARD014</strong></td>
+                    <td>DNS Spoofing</td>
+                    <td class="stars-4">⭐⭐⭐⭐</td>
+                    <td>20</td>
+                    <td>Corrupts DNS data</td>
+                </tr>
+                <tr class="attack">
+                    <td><strong>CARD015</strong></td>
+                    <td>Logic Bomb</td>
+                    <td class="stars-3">⭐⭐⭐</td>
+                    <td>15</td>
+                    <td>Executes on certain conditions</td>
+                </tr>
+                <tr class="attack">
+                    <td><strong>CARD016</strong></td>
+                    <td>Credential Stuffing</td>
+                    <td class="stars-3">⭐⭐⭐</td>
+                    <td>15</td>
+                    <td>Uses stolen credentials</td>
+                </tr>
+                <tr class="attack">
+                    <td><strong>CARD017</strong></td>
+                    <td>ARP Poisoning</td>
+                    <td class="stars-4">⭐⭐⭐⭐</td>
+                    <td>20</td>
+                    <td>Sends fake ARP messages</td>
+                </tr>
+                <tr class="attack">
+                    <td><strong>CARD018</strong></td>
+                    <td>Drive-by Download</td>
+                    <td class="stars-3">⭐⭐⭐</td>
+                    <td>15</td>
+                    <td>Automatic malware download</td>
+                </tr>
+                <tr class="attack">
+                    <td><strong>CARD019</strong></td>
+                    <td>Session Hijacking</td>
+                    <td class="stars-4">⭐⭐⭐⭐</td>
+                    <td>20</td>
+                    <td>Steals session tokens</td>
+                </tr>
+                <tr class="attack">
+                    <td><strong>CARD020</strong></td>
+                    <td>Malvertising</td>
+                    <td class="stars-3">⭐⭐⭐</td>
+                    <td>15</td>
+                    <td>Spreads malware via ads</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card-section">
+        <h2>🛡️ Defense Cards (20 cards)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Card ID</th>
+                    <th>Card Name</th>
+                    <th>Stars</th>
+                    <th>Value</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="defense">
+                    <td><strong>CARD021</strong></td>
+                    <td>Firewall</td>
+                    <td class="stars-4">⭐⭐⭐⭐</td>
+                    <td>20</td>
+                    <td>Monitors network traffic</td>
+                </tr>
+                <tr class="defense">
+                    <td><strong>CARD022</strong></td>
+                    <td>Antivirus Software</td>
+                    <td class="stars-3">⭐⭐⭐</td>
+                    <td>15</td>
+                    <td>Detects and removes malware</td>
+                </tr>
+                <tr class="defense">
+                    <td><strong>CARD023</strong></td>
+                    <td>Strong Password</td>
+                    <td class="stars-3">⭐⭐⭐</td>
+                    <td>15</td>
+                    <td>Complex password protection</td>
+                </tr>
+                <tr class="defense">
+                    <td><strong>CARD024</strong></td>
+                    <td>Two-Factor Authentication</td>
+                    <td class="stars-4">⭐⭐⭐⭐</td>
+                    <td>20</td>
+                    <td>Requires two auth factors</td>
+                </tr>
+                <tr class="defense">
+                    <td><strong>CARD025</strong></td>
+                    <td>Encryption</td>
+                    <td class="stars-5">⭐⭐⭐⭐⭐</td>
+                    <td>25</td>
+                    <td>Converts data to coded form</td>
+                </tr>
+                <tr class="defense">
+                    <td><strong>CARD026</strong></td>
+                    <td>VPN</td>
+                    <td class="stars-4">⭐⭐⭐⭐</td>
+                    <td>20</td>
+                    <td>Creates encrypted connection</td>
+                </tr>
+                <tr class="defense">
+                    <td><strong>CARD027</strong></td>
+                    <td>Intrusion Detection System</td>
+                    <td class="stars-4">⭐⭐⭐⭐</td>
+                    <td>20</td>
+                    <td>Monitors for suspicious activity</td>
+                </tr>
+                <tr class="defense">
+                    <td><strong>CARD028</strong></td>
+                    <td>Security Patch</td>
+                    <td class="stars-3">⭐⭐⭐</td>
+                    <td>15</td>
+                    <td>Fixes security vulnerabilities</td>
+                </tr>
+                <tr class="defense">
+                    <td><strong>CARD029</strong></td>
+                    <td>Access Control List</td>
+                    <td class="stars-3">⭐⭐⭐</td>
+                    <td>15</td>
+                    <td>Specifies access permissions</td>
+                </tr>
+                <tr class="defense">
+                    <td><strong>CARD030</strong></td>
+                    <td>Backup System</td>
+                    <td class="stars-3">⭐⭐⭐</td>
+                    <td>15</td>
+                    <td>Prevents data loss</td>
+                </tr>
+                <tr class="defense">
+                    <td><strong>CARD031</strong></td>
+                    <td>Security Audit</td>
+                    <td class="stars-4">⭐⭐⭐⭐</td>
+                    <td>20</td>
+                    <td>Evaluates security measures</td>
+                </tr>
+                <tr class="defense">
+                    <td><strong>CARD032</strong></td>
+                    <td>Sandboxing</td>
+                    <td class="stars-4">⭐⭐⭐⭐</td>
+                    <td>20</td>
+                    <td>Isolated testing environment</td>
+                </tr>
+                <tr class="defense">
+                    <td><strong>CARD033</strong></td>
+                    <td>Digital Certificate</td>
+                    <td class="stars-4">⭐⭐⭐⭐</td>
+                    <td>20</td>
+                    <td>Proves public key ownership</td>
+                </tr>
+                <tr class="defense">
+                    <td><strong>CARD034</strong></td>
+                    <td>Network Segmentation</td>
+                    <td class="stars-4">⭐⭐⭐⭐</td>
+                    <td>20</td>
+                    <td>Divides network into segments</td>
+                </tr>
+                <tr class="defense">
+                    <td><strong>CARD035</strong></td>
+                    <td>Security Awareness Training</td>
+                    <td class="stars-3">⭐⭐⭐</td>
+                    <td>15</td>
+                    <td>Educates users on threats</td>
+                </tr>
+                <tr class="defense">
+                    <td><strong>CARD036</strong></td>
+                    <td>Honeypot</td>
+                    <td class="stars-4">⭐⭐⭐⭐</td>
+                    <td>20</td>
+                    <td>Decoy system for attackers</td>
+                </tr>
+                <tr class="defense">
+                    <td><strong>CARD037</strong></td>
+                    <td>Security Token</td>
+                    <td class="stars-3">⭐⭐⭐</td>
+                    <td>15</td>
+                    <td>Generates authentication codes</td>
+                </tr>
+                <tr class="defense">
+                    <td><strong>CARD038</strong></td>
+                    <td>HTTPS Protocol</td>
+                    <td class="stars-3">⭐⭐⭐</td>
+                    <td>15</td>
+                    <td>Secure HTTP with encryption</td>
+                </tr>
+                <tr class="defense">
+                    <td><strong>CARD039</strong></td>
+                    <td>Biometric Authentication</td>
+                    <td class="stars-5">⭐⭐⭐⭐⭐</td>
+                    <td>25</td>
+                    <td>Uses biological characteristics</td>
+                </tr>
+                <tr class="defense">
+                    <td><strong>CARD040</strong></td>
+                    <td>SIEM</td>
+                    <td class="stars-5">⭐⭐⭐⭐⭐</td>
+                    <td>25</td>
+                    <td>Real-time security analysis</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card-section">
+        <h2>💚 Heal Cards (10 cards)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Card ID</th>
+                    <th>Card Name</th>
+                    <th>Stars</th>
+                    <th>Value</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="heal">
+                    <td><strong>CARD041</strong></td>
+                    <td>System Restore</td>
+                    <td class="stars-3">⭐⭐⭐</td>
+                    <td>15</td>
+                    <td>Restores to previous state</td>
+                </tr>
+                <tr class="heal">
+                    <td><strong>CARD042</strong></td>
+                    <td>Incident Response Team</td>
+                    <td class="stars-4">⭐⭐⭐⭐</td>
+                    <td>20</td>
+                    <td>Handles security breaches</td>
+                </tr>
+                <tr class="heal">
+                    <td><strong>CARD043</strong></td>
+                    <td>Data Recovery</td>
+                    <td class="stars-4">⭐⭐⭐⭐</td>
+                    <td>20</td>
+                    <td>Retrieves lost/corrupted data</td>
+                </tr>
+                <tr class="heal">
+                    <td><strong>CARD044</strong></td>
+                    <td>Security Hardening</td>
+                    <td class="stars-4">⭐⭐⭐⭐</td>
+                    <td>20</td>
+                    <td>Reduces vulnerabilities</td>
+                </tr>
+                <tr class="heal">
+                    <td><strong>CARD045</strong></td>
+                    <td>Malware Removal Tool</td>
+                    <td class="stars-3">⭐⭐⭐</td>
+                    <td>15</td>
+                    <td>Removes malicious programs</td>
+                </tr>
+                <tr class="heal">
+                    <td><strong>CARD046</strong></td>
+                    <td>Disaster Recovery Plan</td>
+                    <td class="stars-5">⭐⭐⭐⭐⭐</td>
+                    <td>25</td>
+                    <td>Recovers after catastrophe</td>
+                </tr>
+                <tr class="heal">
+                    <td><strong>CARD047</strong></td>
+                    <td>Vulnerability Patch</td>
+                    <td class="stars-3">⭐⭐⭐</td>
+                    <td>15</td>
+                    <td>Emergency security fix</td>
+                </tr>
+                <tr class="heal">
+                    <td><strong>CARD048</strong></td>
+                    <td>Security Upgrade</td>
+                    <td class="stars-4">⭐⭐⭐⭐</td>
+                    <td>20</td>
+                    <td>Improves security infrastructure</td>
+                </tr>
+                <tr class="heal">
+                    <td><strong>CARD049</strong></td>
+                    <td>Forensic Analysis</td>
+                    <td class="stars-4">⭐⭐⭐⭐</td>
+                    <td>20</td>
+                    <td>Investigates security incidents</td>
+                </tr>
+                <tr class="heal">
+                    <td><strong>CARD050</strong></td>
+                    <td>Emergency Backup Restore</td>
+                    <td class="stars-5">⭐⭐⭐⭐⭐</td>
+                    <td>25</td>
+                    <td>Rapid system restoration</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-top: 40px;">
+        <h3>📖 Quick Rules Reference</h3>
+        <ul>
+            <li><strong>Card Value:</strong> Stars × 5 (correct quiz) or Stars × 5 - 5 (wrong quiz)</li>
+            <li><strong>Attack vs Defense:</strong> Net damage = Attack - Defense</li>
+            <li><strong>Attack vs Attack:</strong> Both players take opponent's damage</li>
+            <li><strong>Defense vs Defense:</strong> No damage</li>
+            <li><strong>Heal:</strong> Restore HP (max 100)</li>
+            <li><strong>Win Condition:</strong> Opponent reaches 0 HP or highest HP after max rounds</li>
+        </ul>
+    </div>
+</body>
+
+</html>
